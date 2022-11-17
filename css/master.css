@@ -295,7 +295,8 @@ a.goToTop {
 
 .main {
   background-color: #f6f6f6;
-  width: 100%;
+  /*   width: 100%; */
+  overflow-x: scroll;
   display: grid;
   padding: 20px;
   direction: rtl;
