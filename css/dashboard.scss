@@ -1,0 +1,121 @@
+.main{
+  .boxes-gate{
+    display: grid;
+    grid-template-columns: auto auto;
+    @media (max-width:767px) {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    gap: 25px;
+    direction: rtl;
+    padding: 20px 0;
+    .box{
+      border-radius: 10px;
+      color: #fff;
+      direction: rtl;
+      h3{
+        padding: 10px;
+        font-weight: 100;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      a{
+        color: #fff;
+        font-size: 52px;
+        line-height: 1;
+        padding: 10px;
+        text-decoration: none;
+        text-align: left;
+        display: block;
+      }
+    }
+    .box:first-of-type{
+      background-color: #5a5e60;
+    }
+    .box:nth-of-type(2){
+      background-color: #009dc9;
+    }
+    .box:nth-of-type(3){
+      background-color: #02bdae;
+    }
+    .box:nth-of-type(4){
+      background-color: #dc317e;
+    }
+  }
+  .alerts{
+    background-color: #1f3853;
+    border-radius: 10px;
+    color: #fff;
+    width: fit-content;
+    padding-bottom: 10px;
+    direction: rtl;
+    h3{
+      padding: 10px;
+      border-bottom: solid 1px #009dc9;
+    }
+    .body{
+      max-height: 250px;
+      overflow-y: auto;
+      max-width: 250px;
+      padding-right: 10px;
+      .box{
+        padding-right: 10px;
+        border-right: solid 3px #009dc9;
+        margin: 10px;
+        margin-bottom: 15px;
+        p{
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        span{
+          color: yellow;
+        }
+      }
+    }
+  }
+  .table{
+
+  }
+  .matters{
+    .boxes{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      .box{
+        border: 2px solid #fff;
+        background-color: #ecf3f6;
+        width: 210px;
+        box-shadow: rgb(0 0 0 / 15%) 0px 1px 3px;
+        transition: 0.4s;
+        border-radius: 10px;
+        &:hover{
+          box-shadow: rgb(0 0 0 / 40%) 0px 5px 10px;
+          background-color: #009dc9;
+          p{
+            color: #fff;
+            font-weight: bold;
+          }
+        }
+        img{
+          width: 100%;
+          height: 200px;
+          background-color: black;
+          background-size: cover;
+        }
+        p{
+          font-size: 16px;
+          margin: 0;
+          width: 100%;
+          min-height: 80px;
+          padding: 10px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #1f3853;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <link rel="shortcut icon" href="imgs/letter-a (1).png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <a href="#" class="goToTop">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="footer">
+      <div class="left">
+        <p>Made By</p>
+        <a href="https://ayman-121.github.io/My_Info/">Ayman</a>
+      </div>
+      <div>Copyright &copy; <span id="atimeYear"></span></div>
+    </div>
+    <div class="all">
+      <div class="header">
+        <div class="left_side">
+          <div class="lang">
+            <p id="en active">English</p>
+            <p id="ar">Arabic</p>
+          </div>
+          <div id="gearFull">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="user">User</div>
+          <a href="dashboard.html">اهلا بك</a>
+        </div>
+        <div class="right_side">
+          <p>الطالب</p>
+          <i class="fa-solid fa-bars navShower"></i>
+        </div>
+      </div>
+      <div class="gear" id="gearPull">
+        <a href="">
+          <i class="fa-solid fa-user"></i>
+          <p>حسابي</p>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-message"></i>
+          <p>المراسلات</p>
+        </a>
+        <a onclick="location.reload()">
+          <i class="fa-solid fa-rotate"></i>
+          <p>تحديث الرموز</p>
+        </a>
+        <a href="index.html">
+          <i class="fa-solid fa-power-off"></i>
+          <p>خروج</p>
+        </a>
+      </div>
+      <div class="main">
+        <div class="date">
+          <p>التاريخ و الوقت الخادم ||</p>
+          <span id="atime"></span>
+        </div>
+        <div class="boxes-gate">
+          <div class="box">
+            <h3>مراسلات جديده</h3>
+            <a href="" id="messagesBox"></a>
+          </div>
+          <div class="box">
+            <h3>دروس صفية</h3>
+            <a href="preparedLesson.html" id="lessonsBox"></a>
+          </div>
+          <div class="box">
+            <h3>الختبارات القادمة</h3>
+            <a href="exams.html" id="examsBox"></a>
+          </div>
+          <div class="box">
+            <h3>الواجبات المتاحة</h3>
+            <a href="homework.html" id="homeworksBox"></a>
+          </div>
+        </div>
+        <div class="alerts">
+          <h3>التنبيهات المدرسية</h3>
+          <div class="body">
+            <div class="box">
+              <p>تم الرد من قبل المعلم على واجب Homework2</p>
+              <span>Nov 1, 2022</span>
+            </div>
+            <div class="box">
+              <p>تم الرد من قبل المعلم على واجب Project 1</p>
+              <span>Jan 26, 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="table huge">
+          <h3 class="subTitle">الجدول الدراسي</h3>
+          <p class="notAvailable">غير متوفر</p>
+        </div>
+        <div class="matters huge">
+          <h3 class="subTitle">المواد</h3>
+          <div class="boxes">
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>الدراسات الاسلامية</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>اللغة العربية</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>اللغة الانجليزية</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>الرياضيات</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>العلوم</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>الحاسب الالي</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>الدراسات الاجتماعية (انجليزي)</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>الدراسات الاجتماعية (عربي)</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>التربية البدنية</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>STEAM</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>صناعة محتوى</p>
+            </div>
+            <div class="box">
+              <img src="imgs/noImage.png" alt="Image Not Available" />
+              <p>الرواية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar">
+      <nav class="changer">
+        <img src="imgs/logo.png" alt="" />
+        <a class="selected" href="dashboard.html">
+          <i class="fa-solid fa-chart-pie"></i>
+          <p>لوحة القيادة</p>
+        </a>
+        <a class="selected HomeworkNav">
+          <i class="fa-solid fa-briefcase"></i>
+          <p>الشؤون الدراسية و الأكاديمية</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerHome">
+          <a href="homework.html">الواجبات</a>
+          <a href="preparedLesson.html">الاعمال الصفية</a>
+          <a href="weeklyplan.html">الجدول الاسبوعي</a>
+          <a href="studyGuide.html">
+            <span class="New">New!</span> دليل الاختبارات</a
+          >
+        </div>
+        <a class="selected" href="dashboard.html">
+          <i class="fa-solid fa-bullhorn"></i>
+          <p>الرسائل المدرسية</p>
+        </a>
+        <a class="selected TestsNav">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <p>التعيم الالكتروني</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerTest">
+          <a href="exams.html">الاختبارات</a>
+          <a href="schoolMedia.html">المكتبة الالكترونية</a>
+          <a href="Syllabus.html">المنهاج</a>
+        </div>
+        <a class="selected TicketNav">
+          <i class="fa-solid fa-laptop"></i>
+          <p>التذاكر</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerTicket">
+          <a href="sendIdea.html">ارسال اقتراح</a>
+          <a href="viewIdeas.html">عرض القتراحات المرسلة</a>
+        </div>
+        <a class="selected MessageNav">
+          <i class="fa-solid fa-envelope"></i>
+          <p>المراسلات</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerMessage">
+          <a href="">انشاء رسالة</a>
+          <a href="">الصندوق الوارد</a>
+          <a href="">المعلمين</a>
+          <a href="">المشرفين</a>
+          <a href="">الطلاب</a>
+          <a href="">صندوق الصادر</a>
+          <a href="">الرسائل المحذوفة</a>
+        </div>
+      </nav>
+    </div>
+    <script src="js/master.js"></script>
+    <script>
+      homeworksBox.innerHTML = homeworks;
+      examsBox.innerHTML = exams;
+      messagesBox.innerHTML = messages;
+      lessonsBox.innerHTML = lessons;
+    </script>
+  </body>
+</html>

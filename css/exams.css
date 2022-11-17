@@ -1,0 +1,45 @@
+.main table {
+  border-spacing: 0px;
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+.main table td {
+  padding: 5px 10px;
+  text-align: center;
+}
+.main table thead {
+  padding: 10px;
+}
+.main table thead tr {
+  background-color: #dbe6eb;
+}
+.main table tbody {
+  border-bottom: solid 2px #dbe6eb;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main table tbody tr td:first-of-type {
+  background-color: #ebf3f7;
+}
+.main table tbody tr td:last-of-type a {
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #fff;
+  text-decoration: none;
+  background-color: green;
+}
+.main table tbody tr:last-of-type td {
+  border-bottom: solid 3px #dbe6eb;
+}
+.main table tbody td {
+  border-bottom: 1px dashed #668096;
+  padding: 15px 0;
+}/*# sourceMappingURL=exams.css.map */

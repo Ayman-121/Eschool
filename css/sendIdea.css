@@ -1,0 +1,63 @@
+.main form {
+  padding: 20px;
+  padding-right: 35px;
+  display: grid;
+  direction: ltr;
+}
+.main form p {
+  direction: rtl;
+  color: #333;
+  font-size: 20px;
+}
+.main form .larger-bundle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+}
+.main form .larger-bundle select,
+.main form .larger-bundle input[type=text] {
+  display: block;
+  width: 20%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  min-width: 350px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline-color: rgba(0, 157, 201, 0.3333333333);
+  margin: 10px;
+  direction: rtl;
+}
+.main form .larger-bundle input[type=text] {
+  border-color: #009dc9;
+}
+.main form textarea {
+  width: 100%;
+  min-height: 100px;
+  border-color: #009dc9;
+  outline-color: rgba(0, 157, 201, 0.3333333333);
+  direction: rtl;
+  padding: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #777;
+  font-size: 17px;
+}
+.main form input[type=submit] {
+  color: #ffffff;
+  margin-top: 20px;
+  background-color: rgb(8, 177, 121);
+  border: 1px solid rgba(8, 177, 121, 0);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 100px;
+  font-size: 18px;
+  padding: 5px 13px;
+  border-radius: 3px;
+}/*# sourceMappingURL=sendIdea.css.map */

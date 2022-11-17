@@ -1,0 +1,100 @@
+.main{
+  .handle{
+    position: relative;
+    .form{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20%;
+      gap: 25px;
+      justify-content: center;
+      padding: 20px 20px;
+      border-bottom: 1px solid #009dc9;
+      @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+      }
+      .bundle{
+        p{
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        select{
+          display: block;
+          width: 100%;
+          height: calc(1.5em + 0.75rem + 2px);
+          padding: 0.375rem 0.75rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          outline-color: #009dc955;
+        }
+      }
+    }
+    button{
+      background-color: #009dc9;
+      color: #fff;
+      font-weight: bold;
+      padding: 15px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      position: relative;
+      right: 98%;
+      margin-top: 20px;
+      transform: translateX(100%);
+    }
+  }
+  table{
+    border-spacing: 0px;
+    width: calc(100% - 40px);
+    margin: 20px;
+    td{
+      padding: 5px 10px;
+      text-align: center;
+    }
+    thead{
+      padding: 10px;
+      tr{
+        background-color: #dbe6eb;
+      }
+    }
+    tbody{
+      border-bottom: solid 2px #dbe6eb;
+      height: fit-content;
+      tr{
+        td:first-of-type{
+          background-color: #ebf3f7;
+        }
+        td:last-of-type{
+          display: flex;
+          justify-content: center;
+          flex-direction: row-reverse;
+          align-items: center;
+          .mag{
+            color: #009dc9;
+          }
+          .ix{
+            background-color: red;
+            color: #fff;
+            padding: 3px 6px;
+            margin: 4px; 
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      tr:last-of-type{
+        td{
+          border-bottom: solid 3px #dbe6eb;
+        }
+      }
+      td{
+        border-bottom: 1px dashed #668096;
+        padding: 15px 0;
+      }
+    }
+  }
+}

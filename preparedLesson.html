@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prepared Lesson</title>
+    <link rel="shortcut icon" href="imgs/letter-a (1).png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/preparedLesson.css" />
+  </head>
+  <body>
+    <a href="#" class="goToTop">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="footer">
+      <div class="left">
+        <p>Made By</p>
+        <a href="https://ayman-121.github.io/My_Info/">Ayman</a>
+      </div>
+      <div>Copyright &copy; <span id="atimeYear"></span></div>
+    </div>
+    <div class="all">
+      <div class="header">
+        <div class="left_side">
+          <div class="lang">
+            <p id="en active">English</p>
+            <p id="ar">Arabic</p>
+          </div>
+          <div id="gearFull">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="user">ايمن محمد ابوعنقور</div>
+          <a href="dashboard.html">اهلا بك</a>
+        </div>
+        <div class="right_side">
+          <p>الطالب</p>
+          <i class="fa-solid fa-bars navShower"></i>
+        </div>
+      </div>
+      <div class="gear" id="gearPull">
+        <a href="">
+          <i class="fa-solid fa-user"></i>
+          <p>حسابي</p>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-message"></i>
+          <p>المراسلات</p>
+        </a>
+        <a onclick="location.reload()">
+          <i class="fa-solid fa-rotate"></i>
+          <p>تحديث الرموز</p>
+        </a>
+        <a href="index.html">
+          <i class="fa-solid fa-power-off"></i>
+          <p>خروج</p>
+        </a>
+      </div>
+      <div class="main">
+        <div class="date">
+          <p>التاريخ و الوقت الخادم ||</p>
+          <span id="atime"></span>
+        </div>
+        <div class="handle huge">
+          <div class="form">
+            <div class="bundle">
+              <p>الفصل الدراسي</p>
+              <select>
+                <option value="first">الفصل الاول</option>
+                <option value="second">الفصل الثاني</option>
+                <option value="third">الفصل الثالث</option>
+              </select>
+            </div>
+            <div class="bundle">
+              <p>المادة</p>
+              <select>
+                <option value="all">All</option>
+                <option value="islamic">الدراسات الاسلامية</option>
+                <option value="arabic">اللغة العربية</option>
+                <option value="english">اللغة الانجليزية</option>
+                <option value="math">الرياضيات</option>
+                <option value="science">العلوم</option>
+                <option value="computer">الحاسب الالي</option>
+                <option value="social">الدراسات الجتماعية (انجليزي)</option>
+                <option value="ksa">الدراسات الجتماعية (عربي)</option>
+                <option value="pe">التربية البدنية</option>
+                <option value="steam">STEAM</option>
+                <option value="novel">الرواية</option>
+                <option value="media">صناعة المحتوى</option>
+              </select>
+            </div>
+            <div class="bundle">
+              <p>نوع الواجب</p>
+              <select>
+                <option value="all">الكل</option>
+                <option value="auto">الي</option>
+                <option value="handmade">يدوي</option>
+              </select>
+            </div>
+            <div class="bundle">
+              <p>الحالة</p>
+              <select>
+                <option value="all">all</option>
+                <option value="opened">متاح</option>
+                <option value="need correction">بحاجة لتصحيح</option>
+                <option value="solved">محلول</option>
+                <option value="notSolved">غير محلول</option>
+              </select>
+            </div>
+          </div>
+          <button onclick="showPre()">Search</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>العنوان</td>
+              <td>المادة</td>
+              <td>المعلم</td>
+              <td>تاريخ النشر</td>
+              <td>الحالة</td>
+            </tr>
+          </thead>
+          <tbody class="numbersJs">
+            <tr>
+              <td></td>
+              <td>Prepared Lesson</td>
+              <td>الانجليزية</td>
+              <td>المعلم</td>
+              <td>Nov 7, 2022</td>
+              <td>
+                <i class="fa-solid fa-magnifying-glass mag"></i
+                ><i
+                  onclick="this.parentElement.parentElement.style.display = 'none';"
+                  class="fa-solid fa-xmark ix"
+                ></i>
+                <p>غير مقروء</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="navbar">
+      <nav class="changer">
+        <img src="imgs/logo.png" alt="" />
+        <a class="selected" href="dashboard.html">
+          <i class="fa-solid fa-chart-pie"></i>
+          <p>لوحة القيادة</p>
+        </a>
+        <a class="selected HomeworkNav">
+          <i class="fa-solid fa-briefcase"></i>
+          <p>الشؤون الدراسية و الأكاديمية</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerHome">
+          <a href="homework.html">الواجبات</a>
+          <a href="preparedLesson.html">الاعمال الصفية</a>
+          <a href="weeklyplan.html">الجدول الاسبوعي</a>
+          <a href="studyGuide.html">
+            <span class="New">New!</span> دليل الاختبارات</a
+          >
+        </div>
+        <a class="selected" href="dashboard.html">
+          <i class="fa-solid fa-bullhorn"></i>
+          <p>الرسائل المدرسية</p>
+        </a>
+        <a class="selected TestsNav">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <p>التعيم الالكتروني</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerTest">
+          <a href="exams.html">الاختبارات</a>
+          <a href="schoolMedia.html">المكتبة الالكترونية</a>
+          <a href="Syllabus.html">المنهاج</a>
+        </div>
+        <a class="selected TicketNav">
+          <i class="fa-solid fa-laptop"></i>
+          <p>التذاكر</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerTicket">
+          <a href="sendIdea.html">ارسال اقتراح</a>
+          <a href="viewIdeas.html">عرض القتراحات المرسلة</a>
+        </div>
+        <a class="selected MessageNav">
+          <i class="fa-solid fa-envelope"></i>
+          <p>المراسلات</p>
+          <i class="fa-solid fa-angle-down to-change"></i>
+        </a>
+        <div class="handlerMessage">
+          <a href="">انشاء رسالة</a>
+          <a href="">الصندوق الوارد</a>
+          <a href="">المعلمين</a>
+          <a href="">المشرفين</a>
+          <a href="">الطلاب</a>
+          <a href="">صندوق الصادر</a>
+          <a href="">الرسائل المحذوفة</a>
+        </div>
+      </nav>
+    </div>
+    <script src="js/master.js"></script>
+    <script src="js/preparedLesson.js"></script>
+  </body>
+</html>

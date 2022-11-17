@@ -1,0 +1,114 @@
+.main{
+  table.topmost{
+    border-spacing: 1px;
+    width: calc(100% - 40px);
+    margin: 20px;
+    direction: ltr;
+    td{
+      padding: 5px 10px;
+      text-align: center;
+    }
+    thead{
+      padding: 10px;
+      tr{
+        background-color: #dbe6eb;
+      }
+    }
+    tbody{
+      font-weight: bold;
+      border-bottom: solid 2px #dbe6eb;
+      height: fit-content;
+      tr{
+        td:first-of-type{
+          background-color: #ebf3f7;
+        }
+      }
+      tr:last-of-type{
+        td{
+          border-bottom: solid 3px #dbe6eb;
+        }
+      }
+      td{
+        border-bottom: 1px dashed #668096;
+        padding: 15px 0;
+        a{
+          text-decoration: none;
+          color: #009dc9;
+        }
+      }
+    }
+  }
+  .substance{
+    direction: ltr;
+    .innerSub{
+      padding: 20px;
+      p{
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+      }
+      a{
+        color: #009dc9;
+        text-decoration: none;
+      }
+      ul.most{
+        margin-left: 20px;
+        padding: 30px;
+        li{
+          padding: 10px;
+          font-weight: bold;
+          list-style: circle;
+          ul{
+            padding: 10px;
+            margin-left: 20px;
+          }
+        }
+      }
+      .unit{
+        font-weight: bold;
+        color: red;
+        padding: 20px 0;
+        display: inline-block;
+      }
+      a.toDownload{
+        display: block;
+        margin-top: 30px;
+        margin-left: 30px;
+        width: fit-content;
+        &:hover{
+          text-decoration: underline;
+        }
+        &:visited{
+          color: #668096;
+        }
+      }
+      article{
+        line-height: 2;
+        padding-left: 20px;
+      }
+      article.rtl{
+        direction: rtl;
+      }
+    }
+    .science{
+      ul{
+        padding: 20px;
+        li.chapter{
+          padding: 10px 5px;
+          color: red;
+          font-weight: bold;
+          list-style: circle;
+        }
+        ul{
+          li{
+            padding: 5px 0;
+            list-style: disc;
+            span{
+              color: #10f009;
+            }
+          }
+        }
+      }
+    }
+  }
+}

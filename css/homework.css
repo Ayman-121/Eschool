@@ -1,0 +1,79 @@
+.main .homeworks {
+  width: 100%;
+}
+.main .homeworks .form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  gap: 25px;
+  justify-content: center;
+  padding: 10px 20px;
+}
+@media (max-width: 900px) {
+  .main .homeworks .form {
+    grid-template-columns: 1fr;
+  }
+}
+.main .homeworks .form .bundle p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.main .homeworks .form .bundle select {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline-color: rgba(0, 157, 201, 0.3333333333);
+}
+.main .homeworks table {
+  border-spacing: 0px;
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+.main .homeworks table td {
+  padding: 5px 10px;
+  text-align: center;
+}
+.main .homeworks table thead {
+  padding: 10px;
+}
+.main .homeworks table thead tr {
+  background-color: #dbe6eb;
+}
+.main .homeworks table tbody {
+  border-bottom: solid 2px #dbe6eb;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main .homeworks table tbody tr td:first-of-type {
+  background-color: #ebf3f7;
+}
+.main .homeworks table tbody tr td:last-of-type a {
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #fff;
+  text-decoration: none;
+  background-color: green;
+}
+.main .homeworks table tbody tr:last-of-type td {
+  border-bottom: solid 3px #dbe6eb;
+}
+.main .homeworks table tbody td {
+  border-bottom: 1px dashed #668096;
+  padding: 15px 0;
+}/*# sourceMappingURL=homework.css.map */

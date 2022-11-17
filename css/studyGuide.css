@@ -1,0 +1,108 @@
+.main table.topmost {
+  border-spacing: 1px;
+  width: calc(100% - 40px);
+  margin: 20px;
+  direction: ltr;
+}
+.main table.topmost td {
+  padding: 5px 10px;
+  text-align: center;
+}
+.main table.topmost thead {
+  padding: 10px;
+}
+.main table.topmost thead tr {
+  background-color: #dbe6eb;
+}
+.main table.topmost tbody {
+  font-weight: bold;
+  border-bottom: solid 2px #dbe6eb;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main table.topmost tbody tr td:first-of-type {
+  background-color: #ebf3f7;
+}
+.main table.topmost tbody tr:last-of-type td {
+  border-bottom: solid 3px #dbe6eb;
+}
+.main table.topmost tbody td {
+  border-bottom: 1px dashed #668096;
+  padding: 15px 0;
+}
+.main table.topmost tbody td a {
+  text-decoration: none;
+  color: #009dc9;
+}
+.main .substance {
+  direction: ltr;
+}
+.main .substance .innerSub {
+  padding: 20px;
+}
+.main .substance .innerSub p {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.main .substance .innerSub a {
+  color: #009dc9;
+  text-decoration: none;
+}
+.main .substance .innerSub ul.most {
+  margin-left: 20px;
+  padding: 30px;
+}
+.main .substance .innerSub ul.most li {
+  padding: 10px;
+  font-weight: bold;
+  list-style: circle;
+}
+.main .substance .innerSub ul.most li ul {
+  padding: 10px;
+  margin-left: 20px;
+}
+.main .substance .innerSub .unit {
+  font-weight: bold;
+  color: red;
+  padding: 20px 0;
+  display: inline-block;
+}
+.main .substance .innerSub a.toDownload {
+  display: block;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.main .substance .innerSub a.toDownload:hover {
+  text-decoration: underline;
+}
+.main .substance .innerSub a.toDownload:visited {
+  color: #668096;
+}
+.main .substance .innerSub article {
+  line-height: 2;
+  padding-left: 20px;
+}
+.main .substance .innerSub article.rtl {
+  direction: rtl;
+}
+.main .substance .science ul {
+  padding: 20px;
+}
+.main .substance .science ul li.chapter {
+  padding: 10px 5px;
+  color: red;
+  font-weight: bold;
+  list-style: circle;
+}
+.main .substance .science ul ul li {
+  padding: 5px 0;
+  list-style: disc;
+}
+.main .substance .science ul ul li span {
+  color: #10f009;
+}/*# sourceMappingURL=studyGuide.css.map */
